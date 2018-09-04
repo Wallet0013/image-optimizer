@@ -6,7 +6,8 @@ module.exports = {
     entry: './dist/ImageOptimizer.js',
     output: {
         filename: 'bundle.js',
-        path: path.join(__dirname, 'dest')
+        path: path.join(__dirname, 'js'),
+        publicPath: '/js'
     },
     module: {
         rules: [
