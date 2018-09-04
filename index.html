@@ -4,7 +4,7 @@
   <title>Optimizer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="./css/bulma.min.css" />
-  <!-- <script src="./js/vue.min.js"></script> -->
+  <script src="./js/vue.min.js"></script>
   
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="./js/ganly.js"></script>
@@ -52,15 +52,36 @@
   <section class="hero is-light ">
     <section class="section ">
       <div class="container ">
-        <div id="CroppImage"></div>
+          <div class="columns">
+            <div id="toolBox" class="column is-one-quarter">
+                <label class="label">Quality</label>
+                <div class="buttons has-addons">
+                  <span class="button is-medium">1.0</span>
+                  <span class="button is-medium">0.8</span>
+                  <span class="button is-medium">0.6</span>
+                  <span class="button is-medium">0.4</span>
+                </div>
+                <label class="label">extension</label>
+                <div class="buttons has-addons">
+                  <span class="button is-medium">JPG</span>
+                  <span class="button is-medium">PNG</span>
+                </div>
+            </div>
+            <div id="CroppImage" class="column"></div>
+          </div>
       </div>
     </section>
   </section>
 
+
+
   <section class="hero">
     <section class="section">
-      <div class="container ">
-        <h1>show result</h1>
+      <div id="CroppedImage" class="container ">
+        <figure class="image is-128x128">
+          <img v-bind:src="cropImg" alt="result">
+        </figure>
+        圧縮率とか表示する
       </div>
     </section>
   </section>

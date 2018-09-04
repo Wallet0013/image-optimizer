@@ -20,7 +20,6 @@ const SelectImage = new Vue({
           }
 
           if (typeof FileReader === 'function') {
-                console.log("called")
                 const reader = new FileReader();
 
                 reader.onload = (event) => {
@@ -42,8 +41,20 @@ const CroppImage = new Vue({
     data: {
         text: 'data'
     },
+    methods:{
+        setImage: (d) => {
+            CroppedImage.$data.cropImg = d;
+        }
+    },
     components: {
-          Cropper
-      },
-    template: '<Cropper/>'
+        Cropper
+    },
+    template: '<Cropper @childs-event="setImage" />'
+})
+
+const CroppedImage = new Vue({
+    el: '#CroppedImage',
+    data: {
+        cropImg: ''
+    }
 })
