@@ -22,7 +22,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --hot"
+    "dev": "webpack-dev-server --hot",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
