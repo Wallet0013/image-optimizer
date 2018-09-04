@@ -1,4 +1,6 @@
 const path = require('path');
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
+
 module.exports = {
     mode: 'development',
     entry: './dist/ImageOptimizer.js',
@@ -37,4 +39,7 @@ module.exports = {
     devServer: {
         contentBase: path.resolve(__dirname, './'),
     },
+    plugins: [
+        new VueLoaderPlugin()
+    ]
 }

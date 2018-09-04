@@ -37,21 +37,28 @@
       <h1 class="title has-text-grey has-text-centered"> OR </h1>
     </div>
     <section class="section">
-      <div class="container">
-        <button id="SelectImage"  class="button is-medium is-info is-outlined is-rounded is-fullwidth " type="file">Select Image {{ text }}</button>
+      <div id="SelectImage" class="container">
+        <div class="field">
+          <div class="file is-info is-medium ">
+            <label class="file-label has-text-centered" style="border-radius: 290486px;width: 100%;">
+              <input class="file-input" type="file" name="resume" @change="setImage">
+              <p class="file-cta has-text-centered" style="width: 100%; display:inline-block">Select Image</p>
+            </label>
+          </div>
+        </div>
       </div>
     </section>
   </section>
   <section class="hero is-light ">
     <section class="section ">
       <div class="container ">
-        <h1>show image and tool box</h1>
+        <div id="CroppImage"></div>
       </div>
     </section>
   </section>
 
-  <section class="hero ">
-    <section class="section ">
+  <section class="hero">
+    <section class="section">
       <div class="container ">
         <h1>show result</h1>
       </div>
