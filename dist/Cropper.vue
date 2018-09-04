@@ -6,7 +6,7 @@
         :guides="true"
         :view-mode="0"
         drag-mode="crop"
-        :auto-crop-area="0.5"
+        :auto-crop-area="1"
         :min-container-width="250"
         :min-container-height="180"
         :background="true"
@@ -15,10 +15,10 @@
         :crop="cropImage"
         :src="imgSrc"
         alt="Select image at first"
-        :img-style="{ 'width': '400px', 'height': '300px' }">
+        :img-style="{ 'width': '100%', 'height': '500px' }">
       </vue-cropper>
     </figure>
-    <p class="has-text-centered">
+    <p class="has-text-centered" style="margin-top:10px;">
       <a class="button is-info" @click="rotateLeft" >
         <span class="icon is-small">
           <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgNjQgNjQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDY0IDY0Ij48cGF0aCBmaWxsPSIjRkRGREZCIiBkPSJNLjYxNCAxNi4xOTNsLS4wMDItLjAwMi0uMDA2LS4wMWMtLjE3Mi0uMTk1LS4yOTgtLjQzLS4zOTktLjY3OGwtLjA3Ni0uMjI1Yy0uMDU4LS4xOTEtLjA5NC0uMzg5LS4xMDYtLjU5NmwtLjAxNi0uMjI2LS4wMDgtLjExNWMuMDE0LS4yMzkuMDYyLS40Ny4xMzYtLjY4N2wuMDMtLjA2NGMuMDg4LS4yMzkuMjE0LS40NTEuMzYzLS42NDVsLjA1LS4wOSAxMC4zMTEtMTIuMTQ2Yy43ODktLjkzIDIuMDg0LS45NDggMi44OTQtLjAzNy44MDguOTEuODIzIDIuNDAyLjAzMiAzLjMzNGwtNS41NTggNi41NDljOC4xMjEtMS4wNzYgMTYuMTA0LjYzMyAxNi40ODEuNzE3IDI0LjY0NiA0LjQ2NyA0Mi4wODcgMjcuMjI3IDM4Ljg4IDUwLjczNi0uMTU5IDEuMTY0LTEuMDI4IDEuOTkyLTIuMDE5IDEuOTkybC0uMzItLjAyN2MtMS4xMTYtLjIwMy0xLjg3OC0xLjQwOS0xLjcwNC0yLjY5NiAyLjg1Ny0yMC45NC0xMy4wNTYtNDEuMjgyLTM1LjUzNy00NS4zNTgtLjEwMy0uMDI0LTguMzUxLTEuNzk0LTE2LjExNy0uNTc0bDguNTc3IDUuMDkzYzEuMDA1LjU5OCAxLjM5OCAyLjAyLjg4MSAzLjE3Ny0uNTE2IDEuMTU5LTEuNzQ4IDEuNjA4LTIuNzU2IDEuMDE3bC0xMy41Mi04LjAyOGMtLjE4My0uMTExLS4zNDctLjI1LS40OTEtLjQxMXoiIGNsYXNzPSJhY3RpdmUtcGF0aCIvPjwvc3ZnPg==" />
