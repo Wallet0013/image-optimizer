@@ -63,7 +63,7 @@
       <div id="toolBox" v-if="selected" class="has-text-centered">
         <label class="label">Select Quality</label>
         <div class="buttons has-addons is-centered">
-          <span @click="setQuality(1.0)" class="button is-info is-selected">Very High</span>
+          <span @click="setQuality(1.0)" class="button is-info is-selected">no change</span>
           <span @click="setQuality(0.9)" class="button is-info is-outlined">High</span>
           <span @click="setQuality(0.8)" class="button is-info is-outlined">Good</span>
           <span @click="setQuality(0.7)" class="button is-info is-outlined">Nice</span>
@@ -75,7 +75,7 @@
       <div id="CroppedImage" v-if="selected" class="container has-text-centered">
         <div class="columns">
           <div class="column">
-            <h1> input {{ beforeSize }} {{ beforeType }} </h1>
+            <h1> input {{ beforeSize }} {{ beforeType }} 画像サイズ</h1>
             <figure style="min-height:500px; max-height:500px;">
               <img v-bind:src="rawImg" alt="result" >
             </figure>
